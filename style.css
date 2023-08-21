@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: #000000;
+    background-color: #FAFAFA;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.section-title {
+    margin: 100px auto 80px;
+}
+
+.section-heading {
+    font-size: 2.25rem;
+    font-weight: 700;
+    font-family: 'PT Serif', serif;
+}
+
+.sidebar {
+    margin-top: 2.5em;
+}
+
+.sidebar-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.sidebar-text {
+    font-size: 0.875rem;
+    font-weight: 400;
+    width: 89%;
+}
+
+ /* GRID  */
+
+.collage {
+    display: grid;
+    grid-template-areas: 'Bill Saba'
+    'Shae Skylah'
+    'Grif Stan';
+    column-gap: 2rem;
+}
+
+.Bill {
+    grid-area: Bill;
+}
+
+.Saba {
+    grid-area: Saba;
+}
+
+.Shae {
+    grid-area: Shae;
+}
+
+.Skylah {
+    grid-area: Skylah;
+}
+
+.Grif {
+    grid-area: Shae;
+}
+
+.Stan {
+    grid-area: Stan;
+}
+
+.name {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.padd {
+    position: relative;
+    padding: 0 1rem 0 0;
+}
+.designation {
+    font-size: 0.625rem;
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    right: 0;
+    writing-mode: vertical-rl;
+}
+
+.top-marg-mobo {
+    margin-top: 3rem;
+}
+
+.footer {
+    font-size: 0.875rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #A9A9A9;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.user {
+    font-weight: 700;
+}
+
+
+@media (min-width: 450px){
+
+    .container {
+        width: 75%;
+        max-width: 1050px;
+    }
+
+    .section-title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .article {
+        width: 40%;
+    }
+
+    .sidebar {
+        width: 50%;
+    }
+
+    .sidebar-title {
+        font-size: 1.125rem;
+    }
+
+    .sidebar-text{
+        width: 80%;
+        font-size: 1.125rem;
+    }
+
+    .collage {
+        display: grid;
+        grid-template-areas: 'Bill Saba Shae'
+        'Skylah Grif Stan';
+        column-gap: 4rem;
+    }
+
+    .top-marg-mobo {
+        margin-top: 0;
+    }
+
+    .top-marg-desk {
+        margin-top: 130px;
+    }
+
+    .name {
+        font-size: 1.125rem;
+    }
+
+    .designation {
+        font-size: 0.75rem;
+    }
+}
+
